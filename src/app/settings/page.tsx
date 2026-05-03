@@ -350,13 +350,13 @@ export default function SettingsPage() {
             <input defaultValue="포스코사랑공인중개사" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
           </SettingRow>
           <SettingRow label="등록번호" sublabel="공인중개사 등록 번호">
-            <input defaultValue="2024-경북포항-0012" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+            <input defaultValue="중구-1609" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
           </SettingRow>
-          <SettingRow label="사무소 주소" sublabel="포항시 남구 지곡동">
-            <input defaultValue="경북 포항시 남구 지곡동 394" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+          <SettingRow label="사무소 주소" sublabel="대전 중구 목동">
+            <input defaultValue="대전 중구 목동로 22번길 16" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
           </SettingRow>
           <SettingRow label="대표 전화" sublabel="사무소 연락처">
-            <input defaultValue="054-279-1234" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+            <input defaultValue="042-223-2300" className="text-sm border border-slate-200 rounded-lg px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-brand-500" />
           </SettingRow>
         </SettingSection>
 
