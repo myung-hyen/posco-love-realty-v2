@@ -530,7 +530,5 @@ export const dealTypeStats = [
 ];
 
 export const agents = [
-  { name: "김철수", properties: 12, transactions: 8, commission: 15200000 },
-  { name: "이영희", properties: 10, transactions: 9, commission: 17800000 },
-  { name: "박민준", properties: 8,  transactions: 6, commission: 11500000 },
+  { name: "권옥자", properties: 12, transactions: 8, commission: 15200000 },
 ];
