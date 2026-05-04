@@ -41,9 +41,9 @@ export default function Header({ title, subtitle }: HeaderProps) {
 
         <button className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
           <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center text-white text-xs font-bold">
-            김
+            권
           </div>
-          <span className="text-sm font-medium text-slate-700 hidden md:block">김철수</span>
+          <span className="text-sm font-medium text-slate-700 hidden md:block">권옥자</span>
           <ChevronDown size={14} className="text-slate-500 hidden md:block" />
         </button>
       </div>
