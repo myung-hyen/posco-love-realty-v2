@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site {
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo span {
+  display: block;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.logo strong {
+  font-size: 22px;
+  color: #111827;
+}
+
+.header nav {
+  display: flex;
+  gap: 26px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.header nav a:hover {
+  color: #2563eb;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+  padding: 90px 7%;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.92), rgba(15, 23, 42, 0.95)),
+    radial-gradient(circle at top right, #60a5fa, transparent 35%);
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.hero .badge {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+}
+
+.heroText h1 {
+  margin: 18px 0;
+  font-size: 52px;
+  line-height: 1.18;
+  letter-spacing: -1.5px;
+}
+
+.heroText p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.heroButtons {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 15px 22px;
+  border-radius: 14px;
+  font-weight: 900;
+}
+
+.primaryBtn {
+  background: white;
+  color: #1d4ed8;
+}
+
+.secondaryBtn {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: white;
+}
+
+.heroCard {
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.heroCard h3 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.heroCard ul {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.section {
+  padding: 80px 7%;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.sectionTitle p {
+  color: #2563eb;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.sectionTitle h2,
+.services h2,
+.contact h2 {
+  margin: 10px 0;
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+.propertyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.propertyCard {
+  position: relative;
+  padding: 22px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid #edf0f5;
+  transition: 0.25s;
+}
+
+.propertyCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.13);
+}
+
+.label {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.imageBox {
+  height: 150px;
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, #dbeafe, #eff6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d4ed8;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.propertyCard h3 {
+  margin: 8px 0;
+  font-size: 21px;
+}
+
+.location {
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.propertyCard strong {
+  display: block;
+  margin: 12px 0;
+  font-size: 22px;
+  color: #dc2626;
+}
+
+.propertyCard p {
+  line-height: 1.6;
+}
+
+.propertyCard button,
+.contactForm button {
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.propertyCard button:hover,
+.contactForm button:hover {
+  background: #1d4ed8;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 36px;
+  padding: 80px 7%;
+  background: white;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.serviceGrid div {
+  padding: 28px;
+  border-radius: 24px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.serviceGrid h3 {
+  font-size: 22px;
+  color: #1d4ed8;
+}
+
+.serviceGrid p {
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  padding: 80px 7%;
+}
+
+.contactInfo p {
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.infoBox {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 22px;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.infoBox p {
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.contactForm {
+  padding: 30px;
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 15px 16px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.contactForm textarea {
+  height: 130px;
+  resize: none;
+}
+
+.footer {
+  padding: 36px 7%;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.footer strong {
+  font-size: 22px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 1000px) {
+  .hero,
+  .services,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .propertyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroText h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px 5%;
+  }
+
+  <nav className="nav">
+  <a href="/#properties">추천매물</a>
+  <a href="/#consult">상담문의</a>
+  <a href="/#office">오시는길</a>
+  
+    href="/listings"
+    style={{
+      background: "#1d4ed8 !important",
+      color: "#fff !important",
+      padding: "6px 14px",
+      borderRadius: "6px",
+      fontWeight: "700",
+      border: "2px solid #1d4ed8",
+    }}
+  >
+    매물관리
+  </a>
+</nav>
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .heroText h1 {
+    font-size: 32px;
+  }
+
+  .section,
+  .services,
+  .contact {
+    padding: 60px 5%;
+  }
+
+  .propertyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle h2,
+  .services h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoMark {
+  width: 36px;
+  height: 36px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;        /* ← 이 줄 추가 */
+}
+
+.nav a {
+  padding: 6px 12px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.nav a:hover {
+  background: #f3f4f6;
+}
+.navAdminBtn {
+  background: #2563eb !important;
+  color: #fff !important;
+  padding: 7px 16px !important;
+  border-radius: 7px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+.navAdminBtn:hover {
+  background: #1d4ed8 !important;
+}
